@@ -86,10 +86,42 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Publics\css\Fonts\Opensans\generator_config.txt" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-bold-demo.html" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-italic-demo.html" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-light-demo.html" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-regular-demo.html" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-demo.html" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\easytabs.js" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\opensans-bold-cleartype.png" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\opensans-italic-cleartype.png" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\opensans-light-cleartype.png" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\opensans-regular-cleartype.png" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\opensans-semibold-cleartype.png" />
+    <Content Include="Publics\css\Fonts\Opensans\specimen_files\specimen_stylesheet.css" />
+    <Content Include="Publics\css\Fonts\Opensans\stylesheet.css" />
+    <Content Include="Publics\css\main.css" />
+    <Content Include="Publics\js\jquery.2.1.0.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-bold-webfont.eot" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-bold-webfont.ttf" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-bold-webfont.woff" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-italic-webfont.eot" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-italic-webfont.ttf" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-italic-webfont.woff" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-light-webfont.eot" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-light-webfont.ttf" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-light-webfont.woff" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-regular-webfont.eot" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-regular-webfont.ttf" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-regular-webfont.woff" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.eot" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.ttf" />
+    <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,6 +150,9 @@
       <Project>{9ab7b330-ddbd-4907-b558-e26c465a56f3}</Project>
       <Name>Server</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Publics\img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

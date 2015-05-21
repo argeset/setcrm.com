@@ -1,8 +1,62 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html>
 <head>
-    <title></title>
+    <title>Müşteri İlişkileri Yönetimi / SetCRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/Publics/css/main.css" rel="stylesheet" />
 </head>
 <body>
-    @RenderBody()
+   <header>
+        <div class="logoBg"></div>
+        <h1 class="logo fadeInLeft animated">SetCRM</h1>
+        <div class="lang">
+            <a href="#"><img src="img/en.png" alt="English" /></a>
+        </div>
+        <nav class="login fadeInRight animated">
+            <a href="#">Giriş</a>
+            <a href="#">Kaydol</a>
+        </nav>
+        <nav class="menu fadeInRight animated">
+            <a href="detay.html">Özellikler</a>
+            <a href="#">Müşteriler</a>
+            <a href="#">Blog</a>
+            <a href="http://yardim.setcrm.com" target="_blank">Destek</a>
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+@RenderBody()
+<footer>
+    <div>
+        <a class="fb" href="#">SetCRM Facebook</a>
+        <a class="tw" href="#">SetCRM Twitter</a>
+        <a class="ln" href="#">SetCRM Linkedin</a>
+        <a class="yt" href="#">SetCRM Youtube</a>
+    </div>
+    <strong>Argeset SetCRM &copy; 2015</strong>
+    <nav>
+        <a href="#">Destek</a>
+        <a href="#">İletişim</a>
+        <a href="#">Gizlilik Sözleşmesi</a>
+        <a href="#">Kullanım Koşulları</a>
+    </nav>
+</footer>
+<script src="/Publics/js/jquery.2.1.0.js"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50)
+        {
+            $('header').css('height', '55px').css('background', 'rgba(33, 33, 33, 0.81)');
+            $('header nav.menu  a').css('line-height', '55px').css('font-size', '16px').css('color', '#fff');
+            $('header nav.login a').css('margin-top', '13px');
+            $('.logo').css('line-height', '55px').css('font-size','38px');
+        }
+        else
+        {
+            $('header').css('height', '89px').css('background', 'rgba(255, 255, 255, 0.50)');
+            $('header nav.menu  a').css('line-height', '89px').css('font-size', '18px').css('color', '#212121');
+            $('header nav.login a').css('margin-top', '29px');
+            $('.logo').css('line-height', '89px').css('font-size', '44px');
+        }
+    });
+</script>
 </body>
 </html>

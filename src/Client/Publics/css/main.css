@@ -1,0 +1,402 @@
+﻿
+@import url('/Publics/css/Fonts/Opensans/stylesheet.css');
+
+*{ margin: 0;padding: 0;text-decoration: none;    font-family: 'open_sansregular';  /*text-shadow: 1px 1px 0px #fff;*/}
+body{overflow-x: hidden;}
+
+.logo{ color: #fff;font-size: 44px;margin:0 120px;position: absolute;z-index: 3;line-height: 89px;font-family: 'open_sansbold';transition: 0.6s;}
+header{ height: 89px;width: 100%;float: left;position: fixed;z-index: 99;background:rgba(255, 255, 255, 0.50);box-shadow:0px -2px 18px #272424; transition: 0.6s; /*background:rgba(255, 255, 255, 0.66);*/}
+header nav.menu{ float: right;}
+header nav.menu a{ color: #212121;line-height: 89px;display: block;padding: 0 21px;font-size: 18px;float: left;transition: 0.6s;}
+header nav.menu a:hover{ color: #c0ca33;transition: 0.5s;}
+
+header nav.login{float: right;padding: 0 0 0 34px;}
+header nav.login a{ display: block;padding: 0 21px;font-size: 18px;float: left;background: rgba(9, 91, 147, 1);font-family: 'open_sanssemibold'; transition: 0.6s;color:#fff;height:30px;margin-left:3px;margin-top:29px;line-height:30px;}
+header nav.login a:hover{ color: #01579b;text-decoration: underline}
+/*header nav.login a:first-child{ padding: 0 14px 0 34px;}*/
+header nav.login a:last-child{ margin-right:34px;}
+.lang{float: right;line-height: 65px;height: 35px;padding:0 21px; display: none}
+
+.banner{ float: left;width: 100%;position: relative;z-index: 1;background: url('../img/AnaSayfa_Bg2222.jpg')top center no-repeat fixed;height: 1080px;margin-top: -60px;background-size:1920px}
+.banner h1{ float: left;margin-top: 360px;margin-left: 120px;color:#fff;font-size: 68px;width: auto;letter-spacing: 1px;text-shadow: 3px 4px 19px #272424; font-family: 'open_sanssemibold';}
+.banner .btn{ color: #fff;background:rgba(9, 91, 147, 1);display: block;width: 290px;margin: 0 auto;text-align: center;line-height: 69px;font-size: 30px;margin-top: 570px;margin-left: 120px;font-family: 'open_sanssemibold';}
+.banner span{color: #c0ca33;margin-left: 120px;float: left;margin-top: 22px;font-size: 25px;}
+.banner .lnk{color: #c0ca33;margin-left: 44px;float: left;margin-top: 22px;font-size: 25px;border-bottom: 3px solid #01579b;}
+
+.dark,.light{ float: left;width: 100%;}
+.dark .top{background:url(../img/AnaSayfaAltBorder.png)top center no-repeat;float: left;width: 100%;height: 266px;position: relative;z-index: 5;margin-top: -266px;}
+.dark .content{ width: 100%;background: #212121;min-height: 490px;float:left}
+.dark .bottom{background: url(../img/AnaSayfaAltBorder.png)top center no-repeat;float: left;width: 100%;height: 195px;position: relative;z-index: 5;/*margin-top: -117px;*/}
+.dark .content div{ width: 33%;float: left;}
+.dark .content div h1{color: #c0ca33;text-align: center;font-size: 34px;margin-top: 89px;letter-spacing: 3px;}
+.dark .content div .img{float: left;width: 100%;height: 89px;margin:10px 0;}
+.dark .content div .img1{background: url('../img/AnaSayfaSatislar.png')top center no-repeat;background-size: 89px;}
+.dark .content div .img2{ background: url('../img/AnaSayfaPazarlama.png') top center no-repeat;background-size: 89px;}
+.dark .content div .img3{ background: url('../img/AnaSayfaServisler.png') top center no-repeat;background-size: 89px;}
+.dark .content div p{color: #fff;width: 70%;margin-left: 15%; text-align: center;font-size: 18px;font-weight:100;letter-spacing: 1px;float: left;}
+
+
+.dark .content p{float:left;width: 55%;margin-left: 5%; text-align: justify;line-height: 22px;color: #fff;margin-top: 55px;}
+.dark .content h2{margin-top: 55px;margin-left: 5%;float: left;color: #fff;}
+.dark .content img{float: right;width: 30%;margin-right: 5%;margin-top: 55px; box-shadow: rgb(192, 202, 51) 0px 1px 4px;}
+
+
+.light .content{background: #fff;min-height: 490px;float: left;margin:34px 0 188px 0;width: 100%;}
+.light .content p{float:right;width: 55%;text-align: justify;line-height: 22px;margin-top: 34px;margin-right: 5%; }
+.light .content h2{margin-top: 55px;margin-left: 5%;float: left}
+.light .content img{float: left;width: 30%;margin-left: 5%;margin-top: 55px;  box-shadow: rgb(33, 33, 33) 3px 4px 8px;}
+
+
+footer{background: url(../img/AnasayfaFooterUstu.png) top center no-repeat; float: left;width: 100%;height: 230px;position: relative;z-index: 5;margin-top: -117px;}
+footer div{ float: left;width: 365px;height: 62px;position: relative;z-index: 99;  }
+footer div a{ width: 50px;height: 50px; float: left;margin-top: 70px;margin-left: 21px;text-indent: -9999px;}
+footer div .fb{background: url(../img/facebook.png) no-repeat;background-size:50px}
+footer div .tw{background: url(../img/twitter.png) no-repeat;margin-left: 8px;background-size:50px}
+footer div .ln{background: url(../img/ln.png) no-repeat;margin-left: 8px;background-size:50px}
+footer div .yt{ background: url(../img/youtube.png) no-repeat;margin-left: 8px;background-size:50px}
+footer div a:hover{ opacity: 0.5;}
+
+footer nav{float: right; transform: rotate(-5deg);position: relative;z-index: 99;margin-top: -60px; }
+footer nav a{display: block;color: #fff;line-height: 50px;padding: 0 21px;float: left;}
+footer nav a:hover{ color: #c0ca33;}
+footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21px;margin-top: 51px; position: relative;z-index: 99;transform: rotate(-5deg);}
+
+/*.scroll{ height: 89px;width: 89px;right:21px;bottom: 21px; position: absolute;z-index: 99;background: url(../img/AnaSayfaAsagiOk.png) no-repeat;cursor: pointer;background-size:89px;}*/
+
+
+
+@media screen and (min-width: 1300px) and (max-width: 1370px) {
+    .logo{ margin-left: 89px;}
+    .banner{ height: 700px;}
+    .banner h1{ margin-left: 89px;margin-top: 220px;}
+    .banner .btn{ margin-left: 89px;margin-top: 400px;}
+    .scroll{right: 21px;bottom: 21px;}
+
+    .dark .content div p{ width: 90%;margin-left: 5%;}
+    .dark .content div .img{margin: 50px 0 3px 0;}
+
+    footer nav{margin-top: -39px;}
+    footer div a{ background-size: 40px !important;width: 40px;height: 40px;margin-top: 80px;}
+}
+
+@media screen and (min-width: 920px) and (max-width: 960px) {
+    .logo{ margin-left: 55px;}
+    header nav.login a:first-child{ padding: 0 8px 0 21px;}
+    header nav.login a:last-child{ padding: 0 21px 0 8px;}
+
+    header nav.login {padding: 0px 0 0 13px;}
+    header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 13px;font-size: 18px;float: left}
+
+    .banner{ height: 1000px;}
+    .banner h1{ margin-left: 55px;margin-top: 430px;}
+    .banner .btn{ margin-left: 55px;margin-top: 610px;}
+    .scroll{right: 21px;bottom: 21px;}
+
+    .dark .content div p{ width: 95%;margin-left: 2.5%;}
+    .dark .content div .img{margin: 50px 0 3px 0;}
+
+    footer nav{margin-top: -21px;}
+    footer div a{ background-size: 40px !important;width: 40px;height: 40px;margin-top: 80px;}
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+    body{overflow: scroll}
+    .logo{ margin-left: 21px;}
+    header nav.login a:first-child{ padding: 0 8px 0 21px;}
+    header nav.login a:last-child{ padding: 0 21px 0 8px;}
+
+    header nav.login {padding: 0px 0 0 13px;}
+
+    header nav.menu{ display: none;}
+    header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 13px;font-size: 18px;float: left}
+
+    .banner{ height: 700px;background: url('../img/AnaSayfa_Bg.jpg')left center no-repeat fixed;}
+    .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 32px;}
+    .banner .btn{ margin-left: 21px;margin-top: 300px;font-size: 21px;line-height: 34px;width: 233px;}
+    .scroll{right: 13px;bottom: 13px;background-size: 50px;width: 50px;height: 50px;}
+
+    .dark .content div{ width: 100%;}
+    .dark .content div h1{ margin-top: 34px;}
+    .dark .content div p{ width: 95%;margin-left: 2.5%;}
+    .dark .content div .img{margin: 50px 0 3px 0;}
+
+    .dark .content img{ width: 90%;}
+    .dark .content h2{margin-top: 34px;}
+    .dark .content p{width: 90%;  margin-top: 13px;}
+
+    .light .content {margin: 1px 0 188px 0;}
+    .light .content img{ width: 90%;}
+    .light .content h2{margin-top: 34px;}
+    .light .content p{width: 90%;  margin-top: 13px;}
+
+
+    footer strong{margin-top: 175px;}
+    footer nav,footer div{ display: none;}
+}
+/*#endregion */
+
+
+/*#region Animate */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*fadeInUp*/
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    -ms-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+/*fadeIn Left*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+
+/*fadeInRight*/
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+/*pulse*/
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+/*#endregion */
