@@ -1,0 +1,24 @@
+﻿@model ContactModel
+
+<h2>Index</h2>
+<form method="post">
+
+    <label>Adınız Soyadınız</label>
+    <input type="text" name="Ad" value="@Model.Ad" />
+    <br />
+
+    <label>Email Adresiniz</label>
+    <input type="email" name="Email" value="@Model.Email" />
+    <br />
+
+    <label>Mesajınız</label>
+    <textarea name="Mesaj">
+        @Model.Mesaj
+    </textarea>
+    <br />
+
+    @Html.AntiForgeryToken()
+
+    <button type="submit">Gönder</button>
+
+</form>
