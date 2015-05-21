@@ -126,6 +126,9 @@
     <Content Include="Views\Content\Customers.cshtml" />
     <Content Include="Views\Content\PrivacyAgreement.cshtml" />
     <Content Include="Views\Content\TermsofUse.cshtml" />
+    <Content Include="Views\Content\Workflow.cshtml" />
+    <Content Include="Views\Content\Crm.cshtml" />
+    <Content Include="Views\Content\Reporting.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

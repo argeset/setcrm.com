@@ -21,5 +21,23 @@ namespace Client.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ViewResult Crm()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Reporting()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Workflow()
+        {
+            return View();
+        }
     }
 }
