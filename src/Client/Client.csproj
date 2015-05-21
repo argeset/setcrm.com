@@ -122,6 +122,10 @@
     <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.eot" />
     <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.ttf" />
     <Content Include="Publics\css\Fonts\Opensans\opensans-semibold-webfont.woff" />
+    <Content Include="Views\Property\Index.cshtml" />
+    <Content Include="Views\Content\Customers.cshtml" />
+    <Content Include="Views\Content\PrivacyAgreement.cshtml" />
+    <Content Include="Views\Content\TermsofUse.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -137,7 +141,9 @@
   <ItemGroup>
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PropertyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
