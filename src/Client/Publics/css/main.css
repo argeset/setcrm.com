@@ -5,7 +5,7 @@
 body{overflow-x: hidden;}
 
 .logo{;margin:0 120px;position: absolute;z-index: 3;line-height: 89px;transition: 0.6s;}
-.logo a{ color: #fff;font-size: 44px;line-height: 89px;font-family: 'open_sansbold';}
+.logo a{ color: #fff;font-size: 44px;line-height: 89px;font-family: 'open_sansbold';transition: 0.6s;}
 header{ height: 89px;width: 100%;float: left;position: fixed;z-index: 99;background:rgba(255, 255, 255, 0.50);box-shadow:0px -2px 18px #272424; transition: 0.6s; /*background:rgba(255, 255, 255, 0.66);*/}
 header nav.menu{ float: right;}
 header nav.menu a{ color: #212121;line-height: 89px;display: block;padding: 0 21px;font-size: 18px;float: left;transition: 0.6s;}
