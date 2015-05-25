@@ -39,7 +39,7 @@ header nav.login a:last-child{ margin-right:34px;}
 
 .dark .content p{float:left;width: 55%;margin-left: 5%; text-align: justify;line-height: 22px;color: #fff;margin-top:13px}
 .dark .content h2{margin-top: 55px;margin-left: 5%;float: left;color: #fff;margin-bottom: 50px;}
-.dark .content img{float: right;width: 30%;margin-right: 5%;margin-top: 55px; box-shadow: rgb(192, 202, 51) 0px 1px 4px;}
+.dark .content img{float: right;width: 30%;margin-right: 5%;margin-top: 55px; box-shadow: #fff 1px 0px 3px;}
 
 
 .light .content{background: #fff;min-height: 490px;float: left;margin:34px 0 188px 0;width: 100%;}
