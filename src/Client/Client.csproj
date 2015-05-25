@@ -102,6 +102,8 @@
     <Content Include="Publics\css\Fonts\Opensans\specimen_files\specimen_stylesheet.css" />
     <Content Include="Publics\css\Fonts\Opensans\stylesheet.css" />
     <Content Include="Publics\css\main.css" />
+    <Content Include="Publics\img\1.png" />
+    <Content Include="Publics\img\2.png" />
     <Content Include="Publics\js\jquery.2.1.0.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -160,9 +162,7 @@
       <Name>Server</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Publics\img\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
