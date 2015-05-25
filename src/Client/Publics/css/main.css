@@ -37,14 +37,14 @@ header nav.login a:last-child{ margin-right:34px;}
 .dark .content div p{color: #fff;width: 70%;margin-left: 15%; text-align: center;font-size: 18px;font-weight:100;letter-spacing: 1px;float: left;}
 
 
-.dark .content p{float:left;width: 55%;margin-left: 5%; text-align: justify;line-height: 22px;color: #fff;margin-top: 55px;}
-.dark .content h2{margin-top: 55px;margin-left: 5%;float: left;color: #fff;}
+.dark .content p{float:left;width: 55%;margin-left: 5%; text-align: justify;line-height: 22px;color: #fff;margin-top:13px}
+.dark .content h2{margin-top: 55px;margin-left: 5%;float: left;color: #fff;margin-bottom: 50px;}
 .dark .content img{float: right;width: 30%;margin-right: 5%;margin-top: 55px; box-shadow: rgb(192, 202, 51) 0px 1px 4px;}
 
 
 .light .content{background: #fff;min-height: 490px;float: left;margin:34px 0 188px 0;width: 100%;}
-.light .content p{float:right;width: 55%;text-align: justify;line-height: 22px;margin-top: 34px;margin-right: 5%; }
-.light .content h2{margin-top: 55px;margin-left: 5%;float: left}
+.light .content p{float:right;width: 55%;text-align: justify;line-height: 22px;margin-top: 13px;margin-right: 5%; }
+.light .content h2{margin-top: 55px;margin-left: 5%;float: left;margin-bottom: 34px;}
 .light .content img{float: left;width: 30%;margin-left: 5%;margin-top: 55px;  box-shadow: rgb(33, 33, 33) 3px 4px 8px;}
 
 
