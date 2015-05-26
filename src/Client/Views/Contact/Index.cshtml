@@ -1,27 +1,59 @@
 ﻿@model ContactModel
-<div class="banner" style="height:450px "></div>
+<div class="banner" style="height: 450px;background: url(/Publics/img/iletisim.png)top center no-repeat"></div>
 <div class="dark">
     <div class="top" style="transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);"></div>
     <div class="content">
         <form method="post">
-            <label>Adınız Soyadınız</label>
-            <input type="text" name="Ad" value="@Model.Ad" />
-            <br />
+            <div class="backContent" id="mail">
+                <h2>İletişim Formu / Sizi Arayalım</h2>
 
-            <label>Email Adresiniz</label>
-            <input type="email" name="Email" value="@Model.Email" />
-            <br />
+                <div>
+                    <label>Adınız Soyadınız</label>
+                    <input type="text" name="Ad" value="@Model.Ad"/>
+                </div>
 
-            <label>Mesajınız</label>
-            <textarea name="Mesaj">
-                @Model.Mesaj
-            </textarea>
-            <br />
+                <div>
+                    <label>Email Adresiniz</label>
+                    <input type="email" name="Email" value="@Model.Email"/>
+                </div>
 
-            @Html.AntiForgeryToken()
-            <button type="submit">Gönder</button>
+                <div>
+                    <label>Telefon Numaranız</label>
+                    <input type="tel" name="Telefon" value="@Model.Email"/>
+                </div>
+
+                <div>
+                    <label>Mesajınız</label>
+                    <textarea name="Mesaj">@Model.Mesaj</textarea>
+                </div>
+
+                @Html.AntiForgeryToken()
+                <button id="send" type="submit">Gönder</button>
+                <div style="font-weight: bold; color: #fff; float: left; height: 50px; line-height: 50px;text-align: center">@ViewBag.message</div>
+            </div>
+            <div class="backContent">
+                <h2>İletişim Bilgileri / Adres</h2>
+
+                <div>
+                    <label style="width: 100px">Adres</label>
+                    <span>Libadiye Caddesi No:48/3 Küçük Çamlıca Üsküdar – İSTANBUL / TÜRKİYE</span>
+                </div>
+
+                <div>
+                    <label style="width: 100px">Email</label>
+                    <span>setcrm@argeset.com</span>
+                </div>
+
+                <div>
+                    <label style="width: 100px">Telefon</label>
+                    <span>90–216 428 53 33</span>
+                </div>
+
+                <div>
+                    <label style="width: 100px">Fax</label>
+                    <span>90–216 428 73 33</span>
+                </div>
+            </div>
         </form>
     </div>
 </div>
-
-

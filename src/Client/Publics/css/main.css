@@ -51,8 +51,8 @@ header nav.login a:last-child{ margin-right:34px;}
 footer{background: url(../img/AnasayfaFooterUstu.png) top center no-repeat; float: left;width: 100%;height: 230px;position: relative;z-index: 5;margin-top: -117px;}
 footer div{ float: left;width: 365px;height: 62px;position: relative;z-index: 99;  }
 footer div a{ width: 50px;height: 50px; float: left;margin-top: 70px;margin-left: 21px;text-indent: -9999px;}
-footer div .fb{background: url(../img/facebook.png) no-repeat;background-size:50px}
-footer div .tw{background: url(../img/twitter.png) no-repeat;margin-left: 8px;background-size:50px}
+footer div .fb{background: url(../img/facebook.png) no-repeat;background-size: 50px;margin-left: 8px;}
+footer div .tw{background: url(../img/twitter.png) no-repeat;background-size:50px}
 footer div .ln{background: url(../img/ln.png) no-repeat;margin-left: 8px;background-size:50px}
 footer div .yt{ background: url(../img/youtube.png) no-repeat;margin-left: 8px;background-size:50px}
 footer div a:hover{ opacity: 0.5;}
@@ -64,8 +64,18 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 
 
 .continue{display: block;padding: 0 21px;font-size: 18px;width: 89px; background: rgba(9, 91, 147, 1);font-family: 'open_sanssemibold';color:#fff;height:30px;margin-left:3px;line-height:30px;margin: 0 auto; }
-/*.scroll{ height: 89px;width: 89px;right:21px;bottom: 21px; position: absolute;z-index: 99;background: url(../img/AnaSayfaAsagiOk.png) no-repeat;cursor: pointer;background-size:89px;}*/
 
+/*Form Style*/
+.backContent{ width: 80%;margin-left: 10%;float: left;margin-bottom: 160px}
+.backContent h2{ float: left;width: 100%;}
+.backContent div{ float: left;width: 100% !important;margin: 10px 0}
+.backContent label{ color: #fff;margin-left: 5%;width: 150px;float: left;line-height: 36px;}
+.backContent input{padding:5px; width:300px;border: none;border-left: 5px solid #C0CA33;line-height: 30px;transition: 1s; }
+.backContent input:hover,.backContent textarea:hover{transition: 1s;border-left: 5px solid #01579b; }
+.backContent textarea{padding:5px; width:300px;border: none;border-left: 5px solid #C0CA33;height: 89px;transition: 1s;}
+.backContent button{border: none;/*border-left: 5px solid #C0CA33;*/color: #ffffff;margin-left: 182px;padding: 10px;margin-top: 14px; width: 100px;transition: 1s;background: #01579b;font-size: 15px;font-family: 'open_sansbold';}
+.backContent button:hover{ background: #C0CA33;transition: 1s;cursor: pointer;border-left: 5px solid #01579b;}
+.backContent span{ line-height: 34px;color: #fff;display: block }
 
 
 @media screen and (min-width: 1300px) and (max-width: 1370px) {
