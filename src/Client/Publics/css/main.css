@@ -13,12 +13,14 @@ header nav.menu a:hover{ color: #c0ca33;transition: 0.5s;}
 
 header nav.login{float: right;padding: 0 0 0 34px;}
 header nav.login a{ display: block;padding: 0 21px;font-size: 18px;float: left;background: rgba(9, 91, 147, 1);font-family: 'open_sanssemibold'; transition: 0.6s;color:#fff;height:30px;margin-left:3px;margin-top:29px;line-height:30px;}
-header nav.login a:hover{ color: #212121;text-decoration: underline}
-/*header nav.login a:first-child{ padding: 0 14px 0 34px;}*/
+header nav.login a:hover{ color: rgba(9, 91, 147, 1);text-decoration: underline}
+header nav.login a:first-child:hover{ color: #c0ca33;text-decoration: underline}
+header nav.login a:last-child{ background: #c0ca33}
 header nav.login a:last-child{ margin-right:34px;}
+
 .lang{float: right;line-height: 65px;height: 35px;padding:0 21px; display: none}
 
-.banner{ float: left;width: 100%;position: relative;z-index: 1;background: url('../img/AnaSayfa_Bg2222.jpg')top center no-repeat fixed;height: 1080px;margin-top: -60px;background-size:1920px}
+.banner{ float: left;width: 100%;position: relative;z-index: 1;background: url('../img/Anasayfa_banner.jpg')top center no-repeat fixed;height: 1080px;margin-top: -60px;background-size:1920px}
 .banner h1{ float: left;margin-top: 360px;margin-left: 120px;color:#fff;font-size: 68px;width: auto;letter-spacing: 1px;text-shadow: 3px 4px 19px #272424; font-family: 'open_sanssemibold';}
 .banner .btn{ color: #fff;background:rgba(9, 91, 147, 1);display: block;width: 290px;margin: 0 auto;text-align: center;line-height: 69px;font-size: 30px;margin-top: 570px;margin-left: 120px;font-family: 'open_sanssemibold';}
 .banner span{color: #c0ca33;margin-left: 120px;float: left;margin-top: 22px;font-size: 25px;}
@@ -123,7 +125,7 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     header nav.menu{ display: none;}
     header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 13px;font-size: 18px;float: left}
 
-    .banner{ height: 700px;background: url('../img/AnaSayfa_Bg.jpg')left center no-repeat fixed;}
+    .banner{ height: 700px;background: url('../img/Anasayfa_banner.jpg')left center no-repeat fixed;}
     .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 32px;}
     .banner .btn{ margin-left: 21px;margin-top: 300px;font-size: 21px;line-height: 34px;width: 233px;}
     .scroll{right: 13px;bottom: 13px;background-size: 50px;width: 50px;height: 50px;}

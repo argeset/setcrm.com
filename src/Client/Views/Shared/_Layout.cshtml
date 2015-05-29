@@ -5,7 +5,7 @@
     <link href="/Publics/css/main.css" rel="stylesheet" />
 </head>
 <body>
-   <header>
+    <header>
         <div class="logoBg"></div>
         <h1 class="logo fadeInLeft animated"><a href="/home/index">SetCRM</a></h1>
         <div class="lang">
@@ -23,52 +23,61 @@
             <a href="/contact/index">İletişim</a>
         </nav>
     </header>
-@RenderBody()
-<footer>
-    <div>
-        <a class="tw" href="#">SetCRM Twitter</a>
-        <a class="ln" href="#">SetCRM Linkedin</a>
-        <a class="fb" href="#">SetCRM Facebook</a>
-        <a class="yt" href="#">SetCRM Youtube</a>
-    </div>
-    <strong>Argeset SetCRM &copy; 2015</strong>
-    <nav>
-        <a href="http://yardim.setcrm.com" target="_blank">Destek</a>
-        <a href="/contact/index">İletişim</a>
-        <a href="/content/privacyagreement">Gizlilik Sözleşmesi</a>
-        <a href="/content/termsofuse">Kullanım Koşulları</a>
-    </nav>
-</footer>
-<script src="/Publics/js/jquery.2.1.0.js"></script>
-<script>
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50)
-        {
-            $('header').css('height', '55px').css('background', 'rgba(33, 33, 33, 0.81)');
-            $('header nav.menu  a').css('line-height', '55px').css('font-size', '16px').css('color', '#fff');
-            $('header nav.login a').css('margin-top', '13px');
-            $('.logo a').css('line-height', '55px').css('font-size','38px');
-        }
-        else
-        {
-            $('header').css('height', '89px').css('background', 'rgba(255, 255, 255, 0.50)');
-            $('header nav.menu  a').css('line-height', '89px').css('font-size', '18px').css('color', '#212121');
-            $('header nav.login a').css('margin-top', '29px');
-            $('.logo a').css('line-height', '89px').css('font-size', '44px');
-        }
-    });
-    $("a[href='#step1']").click(function () {
-        $("html, body").animate({ scrollTop: 1500 }, "slow");
-        return false;
-    });
-    $("a[href='#step2']").click(function () {
-        $("html, body").animate({ scrollTop: 2150 }, "slow");
-        return false;
-    });
-    $("a[href='#step3']").click(function () {
-        $("html, body").animate({ scrollTop: 2900 }, "slow");
-        return false;
-    });
-</script>
+    @RenderBody()
+    <footer>
+        <div>
+            <a class="tw" href="#">SetCRM Twitter</a>
+            <a class="ln" href="#">SetCRM Linkedin</a>
+            <a class="fb" href="#">SetCRM Facebook</a>
+            <a class="yt" href="#">SetCRM Youtube</a>
+        </div>
+        <strong>Argeset SetCRM &copy; 2015</strong>
+        <nav>
+            <a href="http://yardim.setcrm.com" target="_blank">Destek</a>
+            <a href="/contact/index">İletişim</a>
+            <a href="/content/privacyagreement">Gizlilik Sözleşmesi</a>
+            <a href="/content/termsofuse">Kullanım Koşulları</a>
+        </nav>
+    </footer>
+    <script src="/Publics/js/jquery.2.1.0.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('header').css('height', '55px').css('background', 'rgba(33, 33, 33, 0.81)');
+                $('header nav.menu  a').css('line-height', '55px').css('font-size', '16px').css('color', '#fff');
+                $('header nav.login a').css('margin-top', '13px');
+                $('.logo a').css('line-height', '55px').css('font-size', '38px');
+            } else {
+                $('header').css('height', '89px').css('background', 'rgba(255, 255, 255, 0.50)');
+                $('header nav.menu  a').css('line-height', '89px').css('font-size', '18px').css('color', '#212121');
+                $('header nav.login a').css('margin-top', '29px');
+                $('.logo a').css('line-height', '89px').css('font-size', '44px');
+            }
+        });
+        $("a[href='#step1']").click(function () {
+            $("html, body").animate({ scrollTop: 1500 }, "slow");
+            return false;
+        });
+        $("a[href='#step2']").click(function () {
+            $("html, body").animate({ scrollTop: 2150 }, "slow");
+            return false;
+        });
+        $("a[href='#step3']").click(function () {
+            $("html, body").animate({ scrollTop: 2900 }, "slow");
+            return false;
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63399792-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>

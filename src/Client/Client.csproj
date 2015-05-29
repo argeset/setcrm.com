@@ -102,18 +102,18 @@
     <Content Include="Publics\css\Fonts\Opensans\specimen_files\specimen_stylesheet.css" />
     <Content Include="Publics\css\Fonts\Opensans\stylesheet.css" />
     <Content Include="Publics\css\main.css" />
-    <Content Include="Publics\img\1.png" />
-    <Content Include="Publics\img\2.png" />
-    <Content Include="Publics\img\3.png" />
+    <Content Include="Publics\img\1.jpg" />
+    <Content Include="Publics\img\2.jpg" />
+    <Content Include="Publics\img\3.jpg" />
     <Content Include="Publics\img\AnaSayfaAltBorder.png" />
     <Content Include="Publics\img\AnasayfaFooterUstu.png" />
     <Content Include="Publics\img\AnaSayfaPazarlama.png" />
     <Content Include="Publics\img\AnaSayfaSatislar.png" />
     <Content Include="Publics\img\AnaSayfaServisler.png" />
     <Content Include="Publics\img\AnaSayfaUstBorder.png" />
-    <Content Include="Publics\img\AnaSayfa_Bg2222.jpg" />
+    <Content Include="Publics\img\Anasayfa_banner.jpg" />
     <Content Include="Publics\img\facebook.png" />
-    <Content Include="Publics\img\iletisim.png" />
+    <Content Include="Publics\img\iletisim.jpg" />
     <Content Include="Publics\img\ln.png" />
     <Content Include="Publics\img\r.jpg" />
     <Content Include="Publics\img\twitter.png" />
@@ -145,6 +145,7 @@
     <Content Include="Views\Content\Workflow.cshtml" />
     <Content Include="Views\Content\Crm.cshtml" />
     <Content Include="Views\Content\Reporting.cshtml" />
+    <None Include="Properties\PublishProfiles\setcrm.com.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
