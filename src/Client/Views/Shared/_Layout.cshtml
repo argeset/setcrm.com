@@ -39,6 +39,9 @@
             <a href="/content/termsofuse">Kullanım Koşulları</a>
         </nav>
     </footer>
+    <div id="nav_down" style="position: absolute; z-index: 9999; width: 80px; height: 80px;overflow: hidden; bottom: 84px; margin-left: calc(50% - 40px); cursor: pointer">
+        <img src="/Publics/img/scroll-down.png" alt="Scroll" style="margin-left: 20px; margin-top: 20px; width: 40px;" />
+    </div>
     <script src="/Publics/js/jquery.2.1.0.js"></script>
     <script>
         $(window).scroll(function () {
@@ -66,8 +69,17 @@
             $("html, body").animate({ scrollTop: 2900 }, "slow");
             return false;
         });
-    </script>
-    <script>
+
+        $('#nav_down').click(
+		function (e) {
+		    $('html, body').animate({ scrollTop:800 }, 800);
+		});
+        $(function () {
+            setInterval(function () {
+                $("#nav_down").fadeOut("slow").fadeIn("slow");
+            }, 1000);
+        });
+        
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)

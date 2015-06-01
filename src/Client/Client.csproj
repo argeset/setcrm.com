@@ -116,6 +116,7 @@
     <Content Include="Publics\img\iletisim.jpg" />
     <Content Include="Publics\img\ln.png" />
     <Content Include="Publics\img\r.jpg" />
+    <Content Include="Publics\img\scroll-down.png" />
     <Content Include="Publics\img\twitter.png" />
     <Content Include="Publics\img\youtube.png" />
     <Content Include="Publics\js\jquery.2.1.0.js" />
@@ -155,7 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>

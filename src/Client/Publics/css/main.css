@@ -22,7 +22,9 @@ header nav.login a:last-child{ margin-right:34px;}
 
 .banner{ float: left;width: 100%;position: relative;z-index: 1;background: url('../img/Anasayfa_banner.jpg')top center no-repeat fixed;height: 1080px;margin-top: -60px;background-size:1920px}
 .banner h1{ float: left;margin-top: 360px;margin-left: 120px;color:#fff;font-size: 68px;width: auto;letter-spacing: 1px;text-shadow: 3px 4px 19px #272424; font-family: 'open_sanssemibold';}
-.banner .btn{ color: #fff;background:rgba(9, 91, 147, 1);display: block;width: 290px;margin: 0 auto;text-align: center;line-height: 69px;font-size: 30px;margin-top: 570px;margin-left: 120px;font-family: 'open_sanssemibold';}
+.banner div{margin: 0 auto;margin-top: 570px;margin-left: 90px;}
+.banner .btn{ color: #fff;background:rgba(9, 91, 147, 1);display: block;width: 290px;text-align: center;line-height: 69px;font-size: 30px;font-family: 'open_sanssemibold';float: left;margin-left: 30px;}
+
 .banner span{color: #c0ca33;margin-left: 120px;float: left;margin-top: 22px;font-size: 25px;}
 .banner .lnk{color: #c0ca33;margin-left: 44px;float: left;margin-top: 22px;font-size: 25px;border-bottom: 3px solid #01579b;}
 
@@ -90,32 +92,35 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     .dark .content div p{ width: 90%;margin-left: 5%;}
     .dark .content div .img{margin: 50px 0 3px 0;}
 
+    .light .content{margin: 34px 0 108px 0}
+
     footer nav{margin-top: -39px;}
     footer div a{ background-size: 40px !important;width: 40px;height: 40px;margin-top: 80px;}
 }
 
-@media screen and (min-width: 920px) and (max-width: 960px) {
-    .logo{ margin-left: 55px;}
+@media screen and (min-width: 920px) and (max-width: 990px) {
+    .logo{ margin-left: 34px;}
     header nav.login a:first-child{ padding: 0 8px 0 21px;}
     header nav.login a:last-child{ padding: 0 21px 0 8px;}
 
     header nav.login {padding: 0px 0 0 13px;}
-    header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 13px;font-size: 18px;float: left}
+    header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 8px;font-size: 18px;float: left}
 
-    .banner{ height: 1000px;}
-    .banner h1{ margin-left: 55px;margin-top: 430px;}
-    .banner .btn{ margin-left: 55px;margin-top: 610px;}
-    .scroll{right: 21px;bottom: 21px;}
+    .banner{ height: 800px;}
+    .banner h1{ margin-left: 34px;margin-top: 240px;}
+    .banner div{ margin-top: 450px;margin-left: 0;}
 
     .dark .content div p{ width: 95%;margin-left: 2.5%;}
     .dark .content div .img{margin: 50px 0 3px 0;}
+
+    .light .content{margin: 34px 0 130px 0}
 
     footer nav{margin-top: -21px;}
     footer div a{ background-size: 40px !important;width: 40px;height: 40px;margin-top: 80px;}
 }
 
-@media screen and (min-width: 0) and (max-width: 480px) {
-    body{overflow: scroll}
+@media screen and (min-width: 480px) and (max-width: 919px) {
+    body{overflow-x: scroll}
     .logo{ margin-left: 21px;}
     header nav.login a:first-child{ padding: 0 8px 0 21px;}
     header nav.login a:last-child{ padding: 0 21px 0 8px;}
@@ -126,10 +131,43 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     header nav.menu a{ color: #fff;line-height: 89px;display: block;padding: 0 13px;font-size: 18px;float: left}
 
     .banner{ height: 700px;background: url('../img/Anasayfa_banner.jpg')left center no-repeat fixed;}
-    .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 32px;}
-    .banner .btn{ margin-left: 21px;margin-top: 300px;font-size: 21px;line-height: 34px;width: 233px;}
-    .scroll{right: 13px;bottom: 13px;background-size: 50px;width: 50px;height: 50px;}
+    .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 55px;width: 90%}
+    .banner div{ margin-top: 360px;margin-left: 0;}
+    .banner .btn{font-size: 21px;line-height: 34px;width: 223px;margin-left: 20px;}
+    .banner .btn:last-child {width: 216px !important }
+    
+    .dark .top { margin-top: -265px;}
 
+    .dark .content div{ width: 100%;}
+    .dark .content div h1{ margin-top: 34px;}
+    .dark .content div p{ width: 95%;margin-left: 2.5%;}
+    .dark .content div .img{margin: 50px 0 3px 0;}
+
+    .dark .content img{ width: 90%;}
+    .dark .content h2{margin-top: 34px;}
+    .dark .content p{width: 90%;  margin-top: 13px;}
+
+    .light .content {margin: 1px 0 188px 0;}
+    .light .content img{ width: 90%;}
+    .light .content h2{margin-top: 34px;}
+    .light .content p{width: 90%;  margin-top: 13px;}
+
+
+    footer strong{margin-top: 110px;}
+    footer nav,footer div{ display: none;}
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+    body{overflow: scroll}
+    .logo{ margin-left: 21px;}
+    .logo a{font-size: 32px !important}
+    header nav.login {padding: 0;margin-right: -10px;}
+    header nav.menu{ display: none;}
+    .banner{ height: 600px;background: url('../img/Anasayfa_banner.jpg')left center no-repeat fixed;}
+    .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 32px;width: 80%;}
+    .banner div{ margin-left: 0;margin-top: 300px;}
+    .banner .btn{font-size: 21px;line-height: 34px;width: 243px !important;margin-left: 23px;margin-bottom: 13px; }
+    
     .dark .content div{ width: 100%;}
     .dark .content div h1{ margin-top: 34px;}
     .dark .content div p{ width: 95%;margin-left: 2.5%;}
