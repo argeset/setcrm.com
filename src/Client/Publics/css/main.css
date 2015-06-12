@@ -71,7 +71,7 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 .continue{display: block;padding: 0 21px;font-size: 18px;width: 89px; background: rgba(9, 91, 147, 1);font-family: 'open_sanssemibold';color:#fff;height:30px;margin-left:3px;line-height:30px;margin: 0 auto; }
 
 /*Form Style*/
-.backContent{ width: 80%;margin-left: 10%;float: left;margin-bottom: 160px}
+.backContent{width: 80%;margin-left: 10%;float: left;margin-bottom: 60px;min-height: 470px}
 .backContent h2{ float: left;width: 100%;}
 .backContent div{ float: left;width: 100% !important;margin: 10px 0}
 .backContent label{ color: #fff;margin-left: 5%;width: 150px;float: left;line-height: 36px;}
@@ -83,16 +83,16 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 .backContent span{ line-height: 34px;color: #fff;display: block }
 
 
-@media screen and (min-width: 1300px) and (max-width: 1370px) {
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
     .logo{ margin-left: 89px;}
     .banner{ height: 700px;}
     .banner h1{ margin-left: 89px;margin-top: 220px;}
-    .banner .btn{ margin-left: 89px;margin-top: 400px;}
+    .banner div{margin-top: 440px;margin-left: 66px;width: 100%;}
     .scroll{right: 21px;bottom: 21px;}
 
     .dark .content div p{ width: 90%;margin-left: 5%;}
     .dark .content div .img{margin: 50px 0 3px 0;}
-
+    .dark .content .backContent{margin-bottom: 40px;min-height: 520px}
     .light .content{margin: 34px 0 108px 0}
 
     footer nav{margin-top: -39px;}
