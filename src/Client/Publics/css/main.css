@@ -92,7 +92,7 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 
     .dark .content div p{ width: 90%;margin-left: 5%;}
     .dark .content div .img{margin: 50px 0 3px 0;}
-    .dark .content .backContent{margin-bottom: 40px;min-height: 520px}
+    .dark .content .backContent{margin-bottom: 40px;}
     .light .content{margin: 34px 0 108px 0}
 
     footer nav{margin-top: -39px;}
