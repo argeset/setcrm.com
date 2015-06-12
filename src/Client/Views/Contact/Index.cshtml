@@ -1,10 +1,10 @@
 ﻿@model ContactModel
-<div class="banner" style="height: 450px;background: url(/Publics/img/iletisim.jpg)top center no-repeat"></div>
+<div class="banner" style="height: 450px;"></div>
 <div class="dark">
     <div class="top" style="transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);"></div>
     <div class="content">
         <form method="post">
-            <div class="backContent" id="mail">
+            <div class="backContent" id="mail" style="margin-bottom: 0;">
                 <h2>İletişim Formu / Sizi Arayalım</h2>
 
                 <div>
@@ -29,9 +29,9 @@
 
                 @Html.AntiForgeryToken()
                 <button id="send" type="submit">Gönder</button>
-                <div style="font-weight: bold; color: #fff; float: left; height: 50px; line-height: 50px;text-align: center">@ViewBag.message</div>
+                <div style="font-weight: bold; color: #fff; float: left; height: 50px; line-height: 50px; text-align: center">@ViewBag.message</div>
             </div>
-            <div class="backContent">
+            <div class="backContent" style="margin-bottom: 0;">
                 <h2>İletişim Bilgileri / Adres</h2>
 
                 <div>
@@ -55,5 +55,8 @@
                 </div>
             </div>
         </form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.716823723527!2d29.074105559524536!3d41.009570848318006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac86dd0053f03%3A0xdbfe262e3f6aa25e!2zQXJnZXNldCBZYXrEsWzEsW0!5e0!3m2!1str!2s!4v1434095897601" width="60%" height="450" frameborder="0" style="border: 0; margin-bottom: 160px;margin-left: 20%"></iframe>
+
     </div>
 </div>
