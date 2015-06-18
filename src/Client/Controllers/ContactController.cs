@@ -31,12 +31,17 @@ namespace Client.Controllers
             try
             {
                 SendMail("info@setcrm.com", "info@setcrm.com", contactRequest.Email, "SetCRM--Sizi Arayalım ",
-            "<stong>Ad :</stong>" + contactRequest.Ad + "  <br/> " +
-            "<stong>Email :</stong>" + contactRequest.Email + " <br/> " +
-            "<stong>Telefon :</stong>" + contactRequest.Telefon + " <br/> " +
-            "<stong>Mesaj :</stong>" + contactRequest.Mesaj + " <br/> " +
-            "<stong>IP :</stong>" + contactRequest.IP + " ");
-            ViewBag.message = "Mail Başarıyla İletilmiştir.Teşekkürler";
+                "<stong>Ad :</stong>" + contactRequest.Ad + "  <br/> " +
+                "<stong>Email :</stong>" + contactRequest.Email + " <br/> " +
+                "<stong>Telefon :</stong>" + contactRequest.Telefon + " <br/> " +
+                "<stong>Mesaj :</stong>" + contactRequest.Mesaj + " <br/> " +
+                "<stong>IP :</stong>" + contactRequest.IP + " ");
+                ViewBag.message = "Mail Başarıyla İletilmiştir.Teşekkürler.";
+
+                model.Ad = "";
+                model.Email = "";
+                model.Telefon = "";
+                model.Mesaj = "";
             }
             catch (Exception)
             {
@@ -44,7 +49,7 @@ namespace Client.Controllers
                 ViewBag.message = "Mail Gönderiminde Hata Oluştu Lütfen Daha Sonra Tekrar Deneyiniz.";
 
             }
-           
+
             return View(model);
         }
         public static void SendMail(string kimden, string kime, string gonderilenAdSoyad, string konu, string icerik)
@@ -72,7 +77,7 @@ namespace Client.Controllers
 
             smtp.EnableSsl = true;
 
-            smtp.Port = 587; 
+            smtp.Port = 587;
 
             smtp.Send(message);
         }

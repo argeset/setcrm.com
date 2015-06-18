@@ -69,6 +69,11 @@
             return false;
         });
 
+        $(".modal-body p:contains('Mail Başarıyla İletilmiştir.Teşekkürler.')").closest('.modal').css("display", "block");
+        if ($('.modal').css('display') == 'block') {
+            $('#modalBack').css('display', 'block');
+        }
+        $('#modalBack, .modal .close_modal').click(function () { $('.modal_content, .modal, #modalBack').css('display', 'none'); });
         $('#nav_down').click(
 		function (e) {
 		    $('html, body').animate({ scrollTop:800 }, 800);

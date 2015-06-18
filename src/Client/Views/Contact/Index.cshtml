@@ -1,7 +1,7 @@
 ﻿@model ContactModel
 <div class="banner" style="height: 450px;"></div>
 <div class="dark">
-    <div class="top" style="transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);"></div>
+    <div class="top" style="transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg);"></div>
     <div class="content">
         <form method="post">
             <div class="backContent" id="mail" style="margin-bottom: 0;">
@@ -19,7 +19,7 @@
 
                 <div>
                     <label>Telefon Numaranız</label>
-                    <input type="tel" name="Telefon" id="phone" value="@Model.Email" />
+                    <input type="tel" name="Telefon" id="phone" value="@Model.Email"/>
                 </div>
 
                 <div>
@@ -56,7 +56,9 @@
             </div>
         </form>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.716823723527!2d29.074105559524536!3d41.009570848318006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac86dd0053f03%3A0xdbfe262e3f6aa25e!2zQXJnZXNldCBZYXrEsWzEsW0!5e0!3m2!1str!2s!4v1434095897601" width="60%" height="450" frameborder="0" style="border: 0; margin-bottom: 160px;margin-left: 20%"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.716823723527!2d29.074105559524536!3d41.009570848318006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac86dd0053f03%3A0xdbfe262e3f6aa25e!2zQXJnZXNldCBZYXrEsWzEsW0!5e0!3m2!1str!2s!4v1434095897601" width="60%" height="450" frameborder="0" style="border: 0; margin-bottom: 160px; margin-left: 20%"></iframe>
 
     </div>
 </div>
+<div id="modalBack" style="background: rgba(5, 10, 30, 0.5); z-index: 991; height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; opacity: 1; display: none"></div>
+<div class="modal" style="width: 33%; height: auto; overflow: auto; margin: auto; position: fixed; top: 230px; left: 0px; right: 0px; padding: 10px 15px; z-index: 999; display: none; background-color: white;"><a id="close" class="close_modal" style="cursor:pointer;float: right;width: 10px;padding: 0;  font-size: 15px;font-weight: 700;line-height: 1;color: #999;text-shadow: 0 1px 0 #fff;font-family: Arial">x</a><div class="modal-header" style="min-height: 16.43px;padding: 15px;border-bottom: 1px solid #e5e5e5;"><h2>İletişim Formu İletisi</h2></div><div class="modal-body" style="position: relative;padding: 15px;"><p>@ViewBag.message</p></div><div class="modal-footer" style="padding: 15px;border-top: 1px solid #e5e5e5;"></div></div>
