@@ -121,6 +121,7 @@
     <Content Include="Publics\img\twitter.png" />
     <Content Include="Publics\img\youtube.png" />
     <Content Include="Publics\js\jquery.2.1.0.js" />
+    <Content Include="Publics\js\jquery.mask.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

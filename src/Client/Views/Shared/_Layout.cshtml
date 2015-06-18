@@ -40,6 +40,7 @@
         </nav>
     </footer>
     <script src="/Publics/js/jquery.2.1.0.js"></script>
+<script src="~/Publics/js/jquery.mask.js"></script>
     <script>
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
@@ -54,6 +55,7 @@
                 $('.logo a').css('line-height', '89px').css('font-size', '44px');
             }
         });
+        $('#phone').mask('(000) 000-0000');
         $("a[href='#step1']").click(function () {
             $("html, body").animate({ scrollTop: 1500 }, "slow");
             return false;
