@@ -39,5 +39,23 @@ namespace Client.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ViewResult Service()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Marketing()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Integration()
+        {
+            return View();
+        }
     }
 }

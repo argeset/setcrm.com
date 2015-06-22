@@ -30,7 +30,7 @@ namespace Client.Controllers
             contactRequest.IP = Request.UserHostName;
             try
             {
-                SendMail("info@setcrm.com", "info@setcrm.com", contactRequest.Email, "SetCRM--Sizi Arayalım ",
+                SendMail("info@setcrm.com", "info@setcrm.com", contactRequest.Email, "SetCRM--İletişim Formu ",
                 "<stong>Ad :</stong>" + contactRequest.Ad + "  <br/> " +
                 "<stong>Email :</stong>" + contactRequest.Email + " <br/> " +
                 "<stong>Telefon :</stong>" + contactRequest.Telefon + " <br/> " +

@@ -5,30 +5,57 @@
     <h1 class="pulse animated">Süreçlerinize Özel,<br /> Esnek Bulut CRM</h1>
     <div>
         <a href="//maya.setcrm.com/user/new" target="_blank" class="btn fadeInLeftBig animated" style="background:rgba(229, 78, 51, 1)">Ücretsiz Deneyin</a>
-        <a href="/contact/index" class="btn fadeInLeftBig animated" style="width: 240px;">Sizi Arayalım</a>
+        <a href="#" class="btn fadeInLeftBig animated siziarayalim" style="width: 240px;">Sizi Arayalım</a>
     </div>
 </div>
 <div class="dark">
     <div class="top" style="transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);"></div>
     <div class="content">
-        <div>
-            <h1>Müşteri İlişkileri<br />Yönetimi</h1>
-            <div class="img img1"></div>
-            <p>Satış, Servis ve Pazarlama modüllerinden oluşan temel CRM.</p>
-            <p><a href="#step1" class="btn continue step1">Devamı+</a></p>@*/content/crm*@
-        </div>
-        <div>
-            <h1>Gelişmiş<br />Raporlama</h1>
-            <div class="img img2"></div>
-            <p>Esnek şekilde yönetilebilen raporlar ve dasboard</p>
-            <p><a href="#step2" class="btn continue step2">Devamı+</a></p>@*/content/reporting*@
-        </div>
-        <div>
-            <h1>Akışlarınıza<br />Eksiksiz Uyum</h1>
-            <div class="img img3"></div>
-            <p>İş Akışlarınıza uygun sihirbaz yardımı ile yeni modüller oluşturma imkanı</p>
-            <p><a href="#step3" class="btn continue step3">Devamı+</a></p>@*/content/workflow*@
-        </div>
+        <a href="/content/crm">
+            <div>
+                <div class="img img1"></div>
+                <h1>Satış</h1>
+                <p>Satış, Servis ve Pazarlama modüllerinden oluşan temel CRM.</p>
+                <p><a href="#step1" class="btn continue step1">Devamı+</a></p>@*/content/crm*@
+            </div>
+        </a>
+        <a href="/content/service">
+            <div>
+                <div class="img img2"></div>
+                <h1>Servis</h1>
+                <p>Esnek şekilde yönetilebilen raporlar ve dasboard</p>
+                <p><a href="#step2" class="btn continue step2">Devamı+</a></p>@*/content/reporting*@
+            </div>
+        </a>
+        <a href="/content/marketing">
+            <div>
+                <div class="img img3"></div>
+                <h1>Pazarlama </h1>
+                <p>İş Akışlarınıza uygun sihirbaz yardımı ile yeni modüller oluşturma imkanı</p>
+                <p><a href="#step3" class="btn continue step3">Devamı+</a></p>@*/content/workflow*@
+            </div>
+        </a>
+        <a href="/content/reporting">
+            <div>
+                <div class="img img4"></div>
+                <h1>Gelişmiş<br />Raporlama</h1>
+                <p>Esnek şekilde yönetilebilen raporlar ve dasboard</p>
+            </div>
+        </a>
+        <a href="/content/workflow">
+            <div>
+                <div class="img img5"></div>
+                <h1>Akışlarınıza<br />Eksiksiz Uyum</h1>
+                <p>İş Akışlarınıza uygun sihirbaz yardımı ile yeni modüller oluşturma imkanı</p>
+            </div>
+        </a>
+        <a href="/content/integration">
+            <div>
+                <div class="img img6"></div>
+                <h1 style="margin-bottom: 28px;">Entegrasyon</h1>
+                <p>İş Akışlarınıza uygun sihirbaz yardımı ile yeni modüller oluşturma imkanı</p>
+            </div>
+        </a>
     </div>
     <div class="bottom"></div>
 </div>
@@ -64,7 +91,7 @@
 </div>
 <div class="light">
     <div class="content">
-        <img src="/Publics/img/3.jpg" class="left" alt="Alternate Text"/>
+        <img src="/Publics/img/3.jpg" class="left" alt="Alternate Text" />
         <h2>İş Akışlarınıza Eksiksiz Uyum</h2>
         <p>SetCRM Maya temel CRM kullanımı haricinde Extended Relationship Management (XRM) olarak da kullanılabilir. Sayısız özelliği sayesinde WEB arayüzden ihtiyaçlara göre yeni formlar oluşturulabilir.</p>
 
@@ -72,6 +99,38 @@
 
     </div>
 </div>
-  <div id="nav_down" style="position: absolute; z-index: 9999; width: 80px; height: 80px;overflow: hidden; bottom: 84px; margin-left: calc(50% - 40px); cursor: pointer">
-        <img src="/Publics/img/scroll-down.png" alt="Scroll" style="margin-left: 20px; margin-top: 20px; width: 40px;" />
+<div id="modalBack" style="background: rgba(5, 10, 30, 0.5); z-index: 991; height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; opacity: 1; display: none"></div>
+<form method="post">
+    <div class="modal" style="width: 33%; height: auto; overflow: auto; margin: auto; position: fixed; top: 230px; left: 0px; right: 0px; padding: 10px 15px; z-index: 999; display: none; background-color: white;">
+        <a id="close" class="close_modal" style="cursor: pointer; float: right; width: 10px; padding: 0; font-size: 15px; font-weight: 700; line-height: 1; color: #999; text-shadow: 0 1px 0 #fff; font-family: Arial">x</a>
+        <div class="modal-header" style="min-height: 16.43px; padding: 15px; border-bottom: 1px solid #e5e5e5;">
+            <h2>Sizi Arayalım</h2>
+        </div>
+        <div class="modal-body" id="mail" style="position: relative; padding: 15px; ">
+            <div style="float: left; margin: 10px 0">
+                <label style="width: 191px; float: left; line-height: 36px;">Adınız Soyadınız</label>
+                <input style="line-height: 30px; width: 300px;" type="text" name="Ad" value="" required />
+            </div>
+            <div style="float: left; margin: 10px 0">
+                <label style="width: 191px; float: left; line-height: 36px;">Telefon Numaranız</label>
+                <input style="line-height: 30px; width: 300px;" type="tel" name="Telefon" id="phone" value="" required/>
+            </div>
+            <div style="float: left; margin: 10px 0">
+                <label style="width: 191px; float: left; line-height: 36px;">Sizi Ne Zaman Arayalım ?</label>
+                <select id="SelectTime" style="line-height: 30px; height: 35px; width: 300px;">
+                    <option value="1">Hemen</option>
+                    <option value="2">Tarihi Ben Seçeyim</option>
+                </select>
+            </div>
+              <div style="float: left; margin: 10px 0; display: none;">
+                <label style="width: 191px; float: left; line-height: 36px;">Tarih / Saat</label>
+                <input style="line-height: 30px; width: 300px;" type="text" id="datetime" name="mesaj"/>
+            </div>
+            <div style="width: 100%; float: left; margin: 10px 0">
+                @Html.AntiForgeryToken()
+                <button id="send" style="border: none; color: #fff; padding: 10px; margin-top: 14px; width: 100px; transition: 1s; background: #01579b; font-size: 15px; font-family: 'open_sansbold'" type="submit">Gönder</button>
+            </div>
+        </div>
+        <div class="modal-footer" style="padding: 15px;"></div>
     </div>
+</form>
