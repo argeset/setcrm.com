@@ -118,6 +118,7 @@
     <Content Include="Publics\img\ln.png" />
     <Content Include="Publics\img\ok.png" />
     <Content Include="Publics\img\pazarlama.png" />
+    <Content Include="Publics\img\pazarlama2.png" />
     <Content Include="Publics\img\r.jpg" />
     <Content Include="Publics\img\satis.png" />
     <Content Include="Publics\img\scroll-down.png" />
@@ -125,6 +126,8 @@
     <Content Include="Publics\img\twitter.png" />
     <Content Include="Publics\img\youtube.png" />
     <Content Include="Publics\js\jquery.2.1.0.js" />
+    <Content Include="Publics\css\jquery.datetimepicker.css" />
+    <Content Include="Publics\js\jquery.datetimepicker.js" />
     <Content Include="Publics\js\jquery.mask.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

@@ -3,6 +3,7 @@
     <title>Müşteri İlişkileri Yönetimi / SetCRM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/Publics/css/main.css" rel="stylesheet" />
+    <link href="/Publics/css/jquery.datetimepicker.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -41,6 +42,7 @@
     </footer>
     <script src="/Publics/js/jquery.2.1.0.js"></script>
     <script src="/Publics/js/jquery.mask.js"></script>
+    <script src="/Publics/js/jquery.datetimepicker.js"></script>
     <script>
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
@@ -56,19 +58,7 @@
             }
         });
         $('#phone').mask('(000) 000-0000');
-        $("a[href='#step1']").click(function () {
-            $("html, body").animate({ scrollTop: 1500 }, "slow");
-            return false;
-        });
-        $("a[href='#step2']").click(function () {
-            $("html, body").animate({ scrollTop: 2150 }, "slow");
-            return false;
-        });
-        $("a[href='#step3']").click(function () {
-            $("html, body").animate({ scrollTop: 2900 }, "slow");
-            return false;
-        });
-
+       
         $(".modal-body p:contains('Mail Başarıyla İletilmiştir.Teşekkürler.')").closest('.modal').css("display", "block");
         if ($('.modal').css('display') == 'block') {
             $('#modalBack').css('display', 'block');
@@ -80,26 +70,24 @@
         });
 
         $('#modalBack, .modal .close_modal').click(function () { $('.modal_content, .modal, #modalBack').css('display', 'none'); });
-        $('#nav_down').click(
-		function (e) {
-		    $('html, body').animate({ scrollTop:800 }, 800);
-		});
-        $(function () {
-            setInterval(function () {
-                $("#nav_down").fadeOut("slow").fadeIn("slow");
-            }, 1000);
-        });
+     
         $('#datetime').val('Hemen');
         $("#SelectTime").change(function () {
-            var numune = $('#SelectTime option:selected');
-            if (numune.val() == "2") {
+            var select = $('#SelectTime option:selected');
+            if (select.val() == "2") {
                 $('#datetime').val('');
                 $('#datetime').closest('div').css('display', 'block');
+                $('#datetime').datetimepicker();
             } else {
                 $('#datetime').closest('div').css('display', 'none');
                 $('#datetime').val('Hemen');
             }
         });
+        $('.accordion ul li a').click(function () {
+            var deger = $(this).attr('href').replace('#', '');
+            $('.accordion-content div').css('display', 'none');
+            $('.accordion-content .'+deger+ '').css('display','block');
+        });
 
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
