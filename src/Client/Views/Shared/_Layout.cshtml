@@ -77,16 +77,21 @@
             if (select.val() == "2") {
                 $('#datetime').val('');
                 $('#datetime').closest('div').css('display', 'block');
-                $('#datetime').datetimepicker();
+                $('#datetime').datetimepicker();
+
             } else {
                 $('#datetime').closest('div').css('display', 'none');
                 $('#datetime').val('Hemen');
             }
-        });
+        });
+
         $('.accordion ul li a').click(function () {
+            $('.accordion ul li a').css('border-bottom', '0');
+            $(this).css('border-bottom','7px solid #333');
             var deger = $(this).attr('href').replace('#', '');
             $('.accordion-content div').css('display', 'none');
-            $('.accordion-content .'+deger+ '').css('display','block');
+            $('.accordion-content .' + deger + '').css('display', 'block');
+
         });
 
         (function (i, s, o, g, r, a, m) {
