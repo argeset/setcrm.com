@@ -71,7 +71,7 @@ namespace Client.Controllers
 
             smtp.UseDefaultCredentials = false;
 
-            System.Net.NetworkCredential ncredential = new System.Net.NetworkCredential("info@setcrm.com", "arge+-2014");
+            System.Net.NetworkCredential ncredential = new System.Net.NetworkCredential("info@setcrm.com", "");
 
             smtp.Credentials = ncredential;
 
