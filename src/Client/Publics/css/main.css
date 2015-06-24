@@ -28,8 +28,9 @@ header nav.login a:last-child{ margin-right:34px;}
 .banner span{color: #c0ca33;margin-left: 120px;float: left;margin-top: 22px;font-size: 25px;}
 .banner .lnk{color: #c0ca33;margin-left: 44px;float: left;margin-top: 22px;font-size: 25px;border-bottom: 3px solid #01579b;}
 
+.dark{margin-top: -264px;}
 .dark,.light{ float: left;width: 100%;}
-.dark .top{background:url(../img/AnaSayfaAltBorder.png)top center no-repeat;float: left;width: 100%;height: 266px;position: relative;z-index: 5;margin-top: -264px;}
+.dark .top{background:url(../img/AnaSayfaAltBorder.png)top center no-repeat;float: left;width: 100%;height: 266px;position: relative;z-index: 5;}
 .dark .content{ width: 100%;background: #212121;float: left;min-height: 430px;/*min-height: 490px;*/}
 .dark .bottom{background: url(../img/AnaSayfaAltBorder.png)top center no-repeat;float: left;width: 100%;height: 195px;position: relative;z-index: 5;/*margin-top: -117px;*/}
 .dark .content div{ width: 33%;float: left;}
@@ -99,18 +100,27 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 .backContent button:hover{ background: #C0CA33;transition: 1s;cursor: pointer;border-left: 5px solid #01579b;}
 .backContent span{ line-height: 34px;color: #fff;display: block }
 
+/*Modal*/
+#modalBack{background: rgba(5, 10, 30, 0.5); z-index: 991; height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; opacity: 1; display: none}
+.modal{width: 33%; height: auto; overflow: auto; margin: auto; position: fixed; top: 230px; left: 0px; right: 0px; padding: 10px 15px; z-index: 999; display: none; background-color: white;}
+.close_modal{cursor: pointer; float: right; width: 10px; padding: 0; font-size: 15px; font-weight: 700; line-height: 1; color: #999; text-shadow: 0 1px 0 #fff; font-family: Arial}
+.modal-body div label{width: 191px; float: left; line-height: 36px;}
+.modal-body div input{line-height: 30px; width: 300px;}
+.modal-body div select{line-height: 30px; height: 35px; width: 300px;}
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
     .logo{ margin-left: 89px;}
     .banner{ height: 700px;}
-    .banner h1{ margin-left: 89px;margin-top: 220px;}
-    .banner div{margin-top: 440px;margin-left: 66px;width: 100%;}
+    .banner h1{ margin-left: 89px;margin-top: 202px;}
+    .banner div{margin-top: 410px;margin-left: 66px;width: 100%;}
     .scroll{right: 21px;bottom: 21px;}
-
+    .dark{margin-top: -234px;}
     .dark .content div p{ width: 90%;margin-left: 5%;}
     .dark .content div .img{margin: 50px 0 3px 0;}
     .dark .content .backContent{margin-bottom: 40px;}
     .light .content{margin: 34px 0 108px 0}
+
+    .modal {width: 40%;top:155px}
 
     footer nav{margin-top: -39px;}
     footer div a{ background-size: 40px !important;width: 40px;height: 40px;margin-top: 80px;}
@@ -154,7 +164,8 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     .banner .btn{font-size: 21px;line-height: 34px;width: 223px;margin-left: 20px;}
     .banner .btn:last-child {width: 216px !important }
     
-    .dark .top { margin-top: -265px;}
+    /*.dark .top { margin-top: -265px;}*/
+     .dark { margin-top: -265px;}
 
     .dark .content div{ width: 100%;}
     .dark .content div h1{ margin-top: 34px;}
@@ -185,9 +196,9 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     header nav.login {padding: 0;margin-right: -10px;}
     header nav.menu{ display: none;}
     .banner{ height: 600px;background: url('../img/Anasayfa_banner.jpg')left center no-repeat fixed;}
-    .banner h1{ margin-left: 21px;margin-top: 200px;font-size: 32px;width: 80%;}
+    .banner h1{ margin-left: 21px;margin-top: 180px;font-size: 32px;width: 80%;}
     .banner div{ margin-left: 0;margin-top: 300px;}
-    .banner .btn{font-size: 21px;line-height: 34px;width: 243px !important;margin-left: 23px;margin-bottom: 13px; }
+    .banner .btn{font-size: 15px;line-height: 34px;width: 145px !important;margin-left: 23px;margin-bottom: 13px; }
     
     .dark .content div{ width: 100%;}
     .dark .content div h1{ margin-top: 34px;}
@@ -206,9 +217,12 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
     .light .content h2{margin-top: 34px;}
     .light .content p{width: 90%;  margin-top: 13px;}
 
+    .content{overflow: hidden}
 
     footer strong{margin-top: 175px;}
     footer nav,footer div{ display: none;}
+
+    .modal {width: 96%;top:20px}
 }
 /*#endregion */
 
