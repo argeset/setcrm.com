@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/Publics/css/main.css" rel="stylesheet" />
     <link href="/Publics/css/jquery.datetimepicker.css" rel="stylesheet" />
+    <meta name="description" content="İş Akışlarınıza göre uyarlanabilen, düşük maliyetli Bulut CRM. Kısa bir süreliğine ilk 3 ay bedava." />
+    <meta name="keywords" content="Bulut CRM,Satış,Servis,Pazarlama,Satın Alma,Görev Takibi,İş Akışları Yazılımı,CRM,BPM,Teklif Yazılımı,Mobil Sipariş Yazılımı,Mobil CRM,Müşteri İlişkileri Yönetimi,Servis Yazılımı, Servis Programı,Teklif Programı, CRM Yazılımı,CRM programı,Bulut Uygulama" />
+    <meta name="author" content="Argeset Yazılım" />
+    <link rel="canonical" href="http://www.setcrm.com/" />
+   
 </head>
 <body>
     <header>
@@ -27,10 +32,10 @@
     @RenderBody()
     <footer>
         <div>
-            <a class="tw" href="#">SetCRM Twitter</a>
-            <a class="ln" href="#">SetCRM Linkedin</a>
-            <a class="fb" href="#">SetCRM Facebook</a>
-            <a class="yt" href="#">SetCRM Youtube</a>
+            <a class="tw" href="https://twitter.com/argesetyazilim" target="_blank">SetCRM Twitter</a>
+            <a class="ln" href="https://tr.linkedin.com/company/argeset-yaz-l-m-dan-san-tic-ltd-ti" target="_blank">SetCRM Linkedin</a>
+            <a class="fb" href="https://www.facebook.com/argesetsetcrm" target="_blank">SetCRM Facebook</a>
+            <a class="yt" href="#" target="_blank">SetCRM Youtube</a>
         </div>
         <strong><a style="color: #fff" href="http://argeset.com/" target="_blank">Argeset</a> SetCRM &copy; 2015</strong>
         <nav>
@@ -58,19 +63,19 @@
             }
         });
         $('#phone').mask('(000) 000-0000');
-       
+
         $(".modal-body p:contains('Mail Başarıyla İletilmiştir.Teşekkürler.')").closest('.modal').css("display", "block");
         if ($('.modal').css('display') == 'block') {
             $('#modalBack').css('display', 'block');
         }
 
-        $('.siziarayalim').click(function() {
+        $('.siziarayalim').click(function () {
             $('.modal').css("display", "block");
             $('#modalBack').css('display', 'block');
         });
 
         $('#modalBack, .modal .close_modal').click(function () { $('.modal_content, .modal, #modalBack').css('display', 'none'); });
-     
+
         $('#datetime').val('Hemen');
         $("#SelectTime").change(function () {
             var select = $('#SelectTime option:selected');
@@ -87,7 +92,8 @@
 
         $('.accordion ul li a').click(function () {
             $('.accordion ul li a').css('border-bottom', '0');
-            $(this).css('border-bottom','7px solid #333');
+            $('.accordion ul li a').removeClass('bluehover');
+            $(this).css('border-bottom', '7px solid #095b93').addClass('bluehover');
             var deger = $(this).attr('href').replace('#', '');
             $('.accordion-content div').css('display', 'none');
             $('.accordion-content .' + deger + '').css('display', 'block');

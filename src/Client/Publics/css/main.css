@@ -79,12 +79,21 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 
 .continue{display: block;padding: 0 21px;font-size: 18px;width: 89px; background: rgba(9, 91, 147, 1);font-family: 'open_sanssemibold';color:#fff;height:30px;margin-left:3px;line-height:30px;margin: 0 auto; display: none}
 
-/*home page accordion*/
-.accordion{ width: 80%;margin-left: 10%}
+/*home page accordion   095b93*/ 
+.accordion{ width: 90%;margin-left: 5%}
 .accordion ul{ width: 100%;}
-.accordion ul li{ float: left; width: 24.9%;border-left: 1px;  border-left: #eee 1px solid;}
-.accordion ul li a{font-family: 'open_sanssemibold';color: #212121;display: block;height: 120px;line-height: 25px;text-align: center;}
-.accordion ul li a div{ width: 100%;height: 59px;padding-top: 20px; display: block;background: url('../img/pazarlama2.png')top center no-repeat;background-size: 59px;margin-top: 20px }
+.accordion ul li{ float: left; width: 16.4%;border-left: 1px;  border-left: #eee 1px solid;}
+.accordion ul li a{font-family: 'open_sanssemibold';color: #095b93;display: block;height: 120px;line-height: 25px;text-align: center;transition: 0.5s;}
+.accordion ul li a:hover{border-bottom: 7px solid rgb(9, 91, 147);transition: 0.5s;}
+
+.accordion ul li a div{ width: 100%;height: 59px;padding-top: 20px; display: block;margin-top: 20px; }
+.accordion ul li a .icon1{background: url('../img/1elektronik.png')top center no-repeat;background-size: 59px;}
+.accordion ul li a .icon2{background: url('../img/2insaat.png')top center no-repeat;background-size: 59px;}
+.accordion ul li a .icon3{background: url('../img/3perakende.png')top center no-repeat;background-size: 59px;}
+.accordion ul li a .icon4{background: url('../img/4saglik.png')top center no-repeat;background-size: 59px;}
+.accordion ul li a .icon5{background: url('../img/5servis.png')top center no-repeat;background-size: 59px;}
+.accordion ul li a .icon6{background: url('../img/6diger.png')top center no-repeat;background-size: 59px;}
+
 .accordion .accordion-content{ width: 100%;float: left;border: 1px solid #eee;padding: 20px}
 .accordion .accordion-content div { display: none;}
 
