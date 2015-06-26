@@ -96,6 +96,7 @@ footer strong{ width:calc(100% - 34px) ;float: left;color: #eee;margin-left: 21p
 
 .accordion .accordion-content{ width: 100%;float: left;border: 1px solid #eee;padding: 20px}
 .accordion .accordion-content div { display: none;}
+.accordion .accordion-content div p{ float: none !important;width: auto !important;margin-right: 0 !important;margin-left: 15px !important}
 
 /*Form Style*/
 .backContent{width: 80%;margin-left: 10%;float: left;margin-bottom: 60px;min-height: 470px}
