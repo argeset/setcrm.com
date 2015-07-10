@@ -22,6 +22,7 @@ namespace Client.Controllers
 
             var contactRequest = new ContactRequest();
             contactRequest.Ad = model.Ad;
+            contactRequest.Firma = model.Firma;
             contactRequest.Telefon = model.Telefon;
             contactRequest.Mesaj = model.Mesaj;
             contactRequest.IP = Request.UserHostName;
@@ -29,12 +30,14 @@ namespace Client.Controllers
             {
                 SendMail("info@setcrm.com", "info@setcrm.com", contactRequest.Email, "SetCRM--Sizi Arayalım ",
                 "<stong>Ad :</stong>" + contactRequest.Ad + "  <br/> " +
+                "<stong>Firma:</stong>" + contactRequest.Firma + "  <br/> " +
                 "<stong>Telefon :</stong>" + contactRequest.Telefon + " <br/> " +
                 "<stong>Arama İsteği Zamanı :</stong>" + contactRequest.Mesaj + " <br/> " +
                 "<stong>IP :</stong>" + contactRequest.IP + " ");
                 ViewBag.message = "Mail Başarıyla İletilmiştir.Teşekkürler.";
 
                 model.Ad = "";
+                model.Firma = "";
                 model.Telefon = "";
                 model.Mesaj = "";
             }
