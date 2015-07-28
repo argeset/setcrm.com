@@ -102,6 +102,10 @@
     <Content Include="Publics\css\Fonts\Opensans\specimen_files\specimen_stylesheet.css" />
     <Content Include="Publics\css\Fonts\Opensans\stylesheet.css" />
     <Content Include="Publics\css\main.css" />
+    <Content Include="Publics\error\401\index.html" />
+    <Content Include="Publics\error\404\index.html" />
+    <Content Include="Publics\error\500\index.html" />
+    <Content Include="Publics\error\index.html" />
     <Content Include="Publics\img\1.jpg" />
     <Content Include="Publics\img\1elektronik.png" />
     <Content Include="Publics\img\2.jpg" />
